@@ -1,0 +1,16 @@
+.gamesGrid{
+    padding:0 3em;
+    margin-top: 2em;
+    color:#fff;
+}
+.gamesGrid > h3{
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.gamesGrid__cards{
+    height: auto;
+    flex-wrap: wrap;
+    gap:2em;
+}
