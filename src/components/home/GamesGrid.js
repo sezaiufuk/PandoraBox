@@ -6,7 +6,7 @@ export default function GamesGrid({title,games}) {
   return (
     <div className='gamesGrid'>
         <h3>{title}</h3>
-        <div className='gamesGrid__cards flex'>
+        <div className='gamesGrid__cards flex centeredItems'>
           {
             games[0] && games[0].map(game=>{
               return(

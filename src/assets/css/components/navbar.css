@@ -52,6 +52,7 @@ nav li:last-child a{
     transition: ease-in-out .2s;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    color: var(--secondary);
 }
 #profileListItem:hover{
     background-color: #222222;
@@ -102,8 +103,5 @@ nav li:last-child a{
     }
     #profileListItem:hover a{
         margin-top: 0em !important;
-    }
-    #profileListItem{
-        color:var(--secondary)
     }
 }

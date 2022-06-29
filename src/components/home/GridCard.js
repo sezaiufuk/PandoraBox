@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../assets/css/components/home/gridCard.css'
 export default function GridCard({game}) {
-    const {title,thumbnail,short_description,genre} = game
+    const {title,thumbnail,short_description,genre,id} = game
   return (
-    <Link to="/" className='gridCard'>
+    <Link to={`/game/${id}`} className='gridCard'>
         <img src={thumbnail}></img>
         <div className='gridCard__overlay'></div>
         <div className='gridCard__details flex'>
