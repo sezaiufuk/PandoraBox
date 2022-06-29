@@ -6,7 +6,7 @@ import LoginPage from './src/pages/LoginPage'
 import Navbar from './src/components/Navbar'
 import { useSelector } from 'react-redux'
 export default function Routes() {
-  const isloggedIn = useSelector(state=>state.authReducer.isLoggedIn)
+  const isLoggedIn = useSelector(state=>state.authReducer.isLoggedIn)
   return (
     <Switch>
         {
