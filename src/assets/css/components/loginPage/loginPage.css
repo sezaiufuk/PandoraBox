@@ -72,3 +72,11 @@ body{
 .warn{
     background-color: #cf1f1f;
 }
+#testUserHint{
+    flex-direction: column;
+    color: #0f0f0f;
+    font-weight: 500;
+}
+#testUserHint span:last-child{
+    margin-top: -1em;
+}

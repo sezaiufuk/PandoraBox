@@ -1,5 +1,6 @@
 .gameShow{
     margin-top: 3em;
+    margin-bottom: 3em;
     padding: 0 3em;
 }
 .gameShow > h3{
@@ -31,4 +32,10 @@
 }
 .gameShow__card:hover{
     transform: scale(1.035);
+}
+
+@media screen and (max-width:768px) {
+    .gameShow > h3{
+        text-align: center;
+    }
 }

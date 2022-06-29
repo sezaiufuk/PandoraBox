@@ -1,8 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 import '../assets/css/components/navbar.css';
 
 export default function Navbar() {
+  const username = useSelector(state=>state.authReducer.userName)
   return (
     <nav className='flex spaceBetweenItems'>
         <h2 className='logo'>
@@ -14,7 +16,7 @@ export default function Navbar() {
         <ul className='flex spaceBetweenItems'>
             <li><Link to='/'>Buy a Pandora Box</Link></li>
             <li><Link to='/'>Daily Reward</Link></li>
-            <li id='profileListItem'><Link to='/'>Sezai Ufuk Oral</Link></li>
+            <li id='profileListItem'><Link to='/'>{username} - 1265PC</Link></li>
             <li id='logoutListItem'><Link to='/'>Logout</Link></li>
         </ul>
     </nav>

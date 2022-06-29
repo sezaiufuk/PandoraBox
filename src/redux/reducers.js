@@ -1,10 +1,10 @@
-import GameShow from '../components/home/GameShow'
+import { combineReducers } from 'redux'
 import * as ACTIONS from './actions'
 const games={
     newGames:[],
-    gamesToShow:[]
+    gamesToShow:[],
 }
-export default function(state=games,action){
+const gamesReducer = function(state=games,action){
     switch(action.type){
         case ACTIONS.SAVE_NEW_GAMES:
                 return {
@@ -20,4 +20,27 @@ export default function(state=games,action){
             return state
     }
 }
+
+const authReducer = function(state={userName:"",isLoggedIn:false},action){
+    switch(action.type){
+        case ACTIONS.SAVE_USER:
+            return{
+                ...state,
+                userName:action.payload
+            }
+        case ACTIONS.LOGGED_IN:
+            return{
+                ...state,
+                isLoggedIn:true
+            }
+        case ACTIONS.LOGGED_OUT:
+            return{
+                ...state,
+                isLoggedIn:false
+            }
+        default:
+            return state
+    }
+}
+export default combineReducers({authReducer,gamesReducer})
 

@@ -62,7 +62,7 @@ nav li:last-child a{
     transition: ease-in-out .2s;
 }
 #profileListItem:hover a{
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 #profileListItem::after,#logoutListItem::after{
     height: 0;

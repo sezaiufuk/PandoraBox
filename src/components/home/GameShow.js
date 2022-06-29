@@ -9,7 +9,7 @@ export default function GameShow({gamesToShow}) {
             {
                     gamesToShow[0] && gamesToShow[0].map(game=>{
                         return(
-                            <Link to={`/game/${game.id}`} className='gameShow__card'>
+                            <Link to={`/game/${game.id}`} className='gameShow__card' key={Math.random()}>
                             <div>
                                 <img src={game.thumbnail}></img>
                                 <div className='gameShow__card__details'>

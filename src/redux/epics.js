@@ -1,6 +1,6 @@
 import { combineEpics, ofType } from 'redux-observable'
 import * as ACTIONS from './actions'
-import {from, ignoreElements, map, mergeAll,switchMap, take, toArray} from 'rxjs';
+import {from, ignoreElements, map, mergeAll,mergeMap,switchMap, take, toArray} from 'rxjs';
 const options = {
     method: 'GET',
     headers: {
@@ -47,7 +47,15 @@ const fetchShowCaseEpic = action$ => action$.pipe(
     map(game=>({type:ACTIONS.SAVE_SHOWCASE,payload:game}))
 )
 
-const rootEpic = combineEpics(fetchNewGamesEpic,fetchShowCaseEpic)
+const authEpic = action$ => action$.pipe(
+    ofType(ACTIONS.LOGGED_IN),
+    map(action=>{
+        const username = action.payload
+        return ({type:ACTIONS.SAVE_USER,payload:username})
+    })
+)
+
+const rootEpic = combineEpics(fetchNewGamesEpic,fetchShowCaseEpic,authEpic)
 export default rootEpic
 
 // https://www.freetogame.com/api/game?id=452

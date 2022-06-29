@@ -1,7 +1,8 @@
 .gamePageCard__container{
     width:100%;
     padding: 0 3em;
-    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
 .gamePageCard{
     width:100%;
@@ -45,6 +46,9 @@
 @media screen and (max-width:768px) {
     .gamePageCard__container{
         padding: 0 1em;
+    }
+    .gamePageCard__container h3{
+        padding-left: 2em;
     }
     .gamePageCard{
         font-size: clamp(.9rem,2vw,2vw);

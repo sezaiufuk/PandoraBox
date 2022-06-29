@@ -7,8 +7,8 @@ import GameShow from '../components/home/GameShow'
 
 export default function Home() {
     const dispatch = useDispatch()
-    const newGames = useSelector(state=>state.newGames)
-    const gamesToShow = useSelector(state=>state.gamesToShow)
+    const newGames = useSelector(state=>state.gamesReducer.newGames)
+    const gamesToShow = useSelector(state=>state.gamesReducer.gamesToShow)
     useEffect(() => {
         dispatch({type:ACTIONS.FETCH_NEW_GAMES})
         dispatch({type:ACTIONS.FETCH_SHOWCASE})
