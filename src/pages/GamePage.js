@@ -39,7 +39,7 @@ export default function GamePage() {
             <img src={gameInfo.thumbnail}></img>
             <div className='gamePageCard__details flex'>
                 <h1>
-                    {gameInfo.title}
+                    {gameInfo.title} - {gameInfo.id} PC
                     <hr></hr>
                 </h1>
                 <p><span>Genre:&nbsp;</span> {gameInfo.genre}</p>
