@@ -17,7 +17,7 @@ export default function LoginPage() {
     }
     useEffect(() => {
       fromEvent(loginButton.current,'click').pipe(
-          debounceTime(500),
+          debounceTime(350),
           map(()=>{
               const username = document.querySelector('#loginFormUsername').value
               const password = document.querySelector('#loginFormPassword').value
