@@ -1,0 +1,79 @@
+#buyPandoraBox__container{
+    width:100%;
+    height: calc(100vh - 10em);
+    padding: 0 3em;
+    align-items: center;
+    gap:4em;
+}
+#buyPandoraBox__container img{
+    margin-top: -4vw;
+    height: 40vw;
+    min-height:12rem;
+    max-height: 100%;
+}
+#buyPandoraBox__details{
+    flex-direction: column;
+    gap: 1em;
+    align-self: stretch;
+    justify-content: flex-start;
+    padding-top: 4em;
+    font-size: clamp(.95rem,1.2vw,1em);
+}
+#buyPandoraBox__details > h2{
+    letter-spacing: 1.25px;
+    color: var(--secondary);
+}
+#buyPandoraBox__details > p{
+    font-weight: 300;
+    font-size: .95em;
+    color:var(--base);
+}
+#buyPandoraBox__details > h3{
+    font-weight: 500;
+    color: var(--secondary);
+
+}
+#buyPandoraBox__details ul{
+    display:flex;
+    flex-direction: column;
+    gap: .5em;
+}
+#buyPandoraBox__details li{
+    color:var(--base);
+    font-weight: 300;
+    font-size: .95em;
+    list-style-type: disc !important;
+}
+#withText{
+    color: #070416;
+    font-weight: 500;
+}
+#purchase_container{
+    gap:1em;
+    align-items: center;
+    font-size: 1.5em;
+    color: cyan;
+    margin-bottom: 2em;
+}
+#pandoraBoxButton{
+    padding: 1em 3em;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    background-color: var(--secondary);
+    border:none;
+    color:var(--base);
+    border-radius: 4px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+#pandoraBoxButton:hover{
+    opacity:0.6;
+}
+@media screen and (max-width:768px){
+    #buyPandoraBox__container{
+        flex-direction: column !important;
+        padding: 0 3em;
+        gap:0;
+    }
+}
