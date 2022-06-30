@@ -6,6 +6,8 @@ import LoginPage from './src/pages/LoginPage'
 import Navbar from './src/components/Navbar'
 import BuyPandoraBoxPage from './src/pages/BuyPandoraBoxPage'
 import { useSelector } from 'react-redux'
+import AuthCheck from './AuthCheck'
+
 export default function Routes() {
   const isLoggedIn = useSelector(state=>state.authReducer.isLoggedIn)
   return (
@@ -24,6 +26,7 @@ export default function Routes() {
         
         <Route exact path='/game/:id' element={
           <>
+            <AuthCheck/>
             <Navbar/>,
             <GamePage/>
           </>
@@ -31,6 +34,7 @@ export default function Routes() {
 
         <Route exact path='/buyPandoraBox' element={
           <>
+            <AuthCheck/>
             <Navbar/>,
             <BuyPandoraBoxPage/>
           </>
