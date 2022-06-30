@@ -1,10 +1,18 @@
 import React from 'react'
 import '../assets/css/components/buyPandoraBoxPage/buyPandoraBox.css'
 import pandoraBox from '../assets/images/pandoraBox.png'
+import { useSelector } from 'react-redux'
+import { Navigate } from 'react-router'
 
 export default function BuyPandoraBoxPage() {
+    const isLoggedIn = useSelector(state=>state.authReducer.isLoggedIn)
+
   return (
-      <div id='buyPandoraBox__container' className='flex'>
+      <>
+        {
+            isLoggedIn || <Navigate to="/"/>
+        }
+        <div id='buyPandoraBox__container' className='flex'>
           <img src={pandoraBox}></img>
           <div id='buyPandoraBox__details' className='flex'>
             <h2>Buy a Pandora Box</h2>
@@ -27,5 +35,6 @@ export default function BuyPandoraBoxPage() {
             </div>
           </div>
       </div>
+      </>
   )
 }

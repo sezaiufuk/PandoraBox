@@ -1,12 +1,13 @@
 import React, { useEffect, useLayoutEffect, useState} from 'react'
-import { useDispatch } from 'react-redux'
 import { useParams } from 'react-router'
 import '../assets/css/components/gamePage/gamePageCard.css'
+import { Navigate } from 'react-router'
+import { useSelector } from 'react-redux'
 
 export default function GamePage() {
-    const dispatch = useDispatch()
     const gameID = useParams().id
     const [gameInfo, setGameInfo] = useState({})
+    const isLoggedIn = useSelector(state=>state.authReducer.isLoggedIn)
 
     const options = {
         method: 'GET',
@@ -34,6 +35,10 @@ export default function GamePage() {
     }, [])
     
   return (
+    <>
+    {
+        isLoggedIn || <Navigate to="/"/>
+    }
     <div className='gamePageCard__container'>
         <div className='gamePageCard flex'>
             <img src={gameInfo.thumbnail}></img>
@@ -52,5 +57,6 @@ export default function GamePage() {
             </div>
         </div>
     </div>
+    </>
   )
 }
