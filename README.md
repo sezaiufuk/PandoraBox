@@ -29,26 +29,10 @@ Free-to-Play Games API: https://rapidapi.com/digiwalls/api/free-to-play-games-da
 Netlify Link: https://pandoraboxapp.netlify.app/  
   
 
-![]()  
+![](https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/login.png)  
+![](https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/1.png)  
+![](https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/2.png)  
+![](https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/3.png)  
+![](https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/4.png)  
 
-<img
-src=“https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/login.png”
-raw=true
-/>
-<img
-src=“https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/1.png”
-raw=true
-/>
-<img
-src=“https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/2.png”
-raw=true
-/>
-<img
-src=“https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/3.png”
-raw=true
-/>
-<img
-src=“https://raw.githubusercontent.com/ufukdev34/PandoraBox/main/src/assets/images/4.png”
-raw=true
-/>
 ----
