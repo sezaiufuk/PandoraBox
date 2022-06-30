@@ -73,7 +73,7 @@ nav li:last-child a{
 
 @media screen and (max-width:1000px) {
     nav{
-        font-size: clamp(.82em,1.8vw,1rem);
+        font-size: clamp(.9em,1.8vw,1rem);
         flex-direction: column;
         align-items: center;
         justify-content: center;

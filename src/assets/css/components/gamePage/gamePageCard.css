@@ -34,6 +34,22 @@
     color:var(--secondary);
     font-weight: 500;
 }
+.gamePageCard button{
+    padding: 1em 3em;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    background-color: var(--secondary);
+    border:none;
+    color:var(--base);
+    border-radius: 4px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+    max-width: 12em;
+}
+.gamePageCard button:hover{
+    opacity:0.6;
+}
 @media screen and (max-width:1000px) {
     .gamePageCard{
         font-size: 1.8vw;

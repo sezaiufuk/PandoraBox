@@ -14,10 +14,10 @@ export default function LoginPage() {
 
     const warn = (cause) => {
             if(cause=="username"){
-                setEmptyBorderColorUserName(`1px solid #ff0077`)
+                setEmptyBorderColorUserName(`1px solid #008cff`)
             }
             else if(cause =="password"){
-                setEmptyBorderColorPassword("1px solid #ff0077")
+                setEmptyBorderColorPassword("1px solid #008cff")
             }
     }
     useEffect(() => {
@@ -43,7 +43,7 @@ export default function LoginPage() {
 
     const handleInputChange = (e,cause) =>{
         if([...e.target.value].length === 0){
-            e.target.style.border = "1px solid #ff0077"
+            e.target.style.border = "1px solid #008cff"
             return
         }
         e.target.style.border = "1px solid transparent"

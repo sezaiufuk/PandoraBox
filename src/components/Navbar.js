@@ -15,7 +15,6 @@ export default function Navbar() {
         </h2>
         <ul className='flex spaceBetweenItems'>
             <li><Link to='/buyPandoraBox'>Buy a Pandora Box</Link></li>
-            <li><Link to='/'>Daily Reward</Link></li>
             <li id='profileListItem'><Link to='/'>{username} - 1265PC</Link></li>
             <li id='logoutListItem'><Link to='/'>Logout</Link></li>
         </ul>

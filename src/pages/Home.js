@@ -2,7 +2,6 @@ import React,{useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import * as ACTIONS from '../redux/actions'
 import GamesGrid from '../components/home/GamesGrid'
-import Hero from '../components/home/Hero'
 import GameShow from '../components/home/GameShow'
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
     }, [])
   return (
     <>
-        <Hero/>
         <GamesGrid title="New Games" games={newGames}/>
         <GameShow gamesToShow={gamesToShow}/>
     </>

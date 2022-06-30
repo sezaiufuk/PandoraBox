@@ -48,7 +48,7 @@ export default function GamePage() {
                 <p><span>Release Date:&nbsp;</span> {gameInfo.release_date}</p>
                 <p><span>Platform:&nbsp;</span> {gameInfo.platform}</p>
                 <p><span>Description:</span><br></br>{gameInfo.short_description}</p>
-                
+                <button>Purchase</button>
             </div>
         </div>
     </div>
