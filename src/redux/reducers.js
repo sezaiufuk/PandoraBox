@@ -36,6 +36,7 @@ const authReducer = function(state={userName:"",isLoggedIn:false},action){
         case ACTIONS.LOGGED_OUT:
             return{
                 ...state,
+                userName:"",
                 isLoggedIn:false
             }
         default:

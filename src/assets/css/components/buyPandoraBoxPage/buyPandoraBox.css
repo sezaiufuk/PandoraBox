@@ -45,7 +45,7 @@
     list-style-type: disc !important;
 }
 #withText{
-    color: #070416;
+    color: var(--secondary);
     font-weight: 500;
 }
 #purchase_container{
